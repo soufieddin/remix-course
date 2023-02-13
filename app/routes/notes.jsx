@@ -24,6 +24,12 @@ export async function loader() {
   return notes;
 }
 
+export function meta() {
+  return {
+    title: "My Notes",
+  }
+}
+
 export function CatchBoundary() {
   const coughtResponse = useCatch();
   const msg = coughtResponse.data.message || "Data not found";

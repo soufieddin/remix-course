@@ -10,7 +10,11 @@ export default function AddNotePage() {
     </main>
   );
 }
-
+export function meta() {
+  return {
+    title: "Add Note",
+  }
+}
 //backend
 export async function action({request}) {
     const formData = await request.formData();

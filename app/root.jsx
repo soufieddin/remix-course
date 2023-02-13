@@ -13,7 +13,7 @@ import styles from '~/styles/main.css';
 
 export const meta = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Notes Remix App",
   viewport: "width=device-width,initial-scale=1",
 });
 
