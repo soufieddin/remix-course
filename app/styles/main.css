@@ -72,6 +72,17 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
+
+  .validation-error {
+    max-width: 25rem;
+    margin: 1rem auto;
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--color-secondary-600);
+    color: var(--color-secondary-100);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
   
   .info-message {
     margin: 2rem;

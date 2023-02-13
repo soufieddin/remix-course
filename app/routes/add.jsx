@@ -15,6 +15,13 @@ export default function AddNotePage() {
 export async function action({request}) {
     const formData = await request.formData();
     const noteData =Object.fromEntries(formData);
+    //some validation
+
+    if(noteData.title.trim().length < 5) {
+      return {message: "Title must be at least 5 characters."}
+    }else if(noteData.content.trim().length < 24) {
+      return {message: "content must be at least 24 characters."}
+    }
     const existingNotes = await getStoredNotes();
     noteData.id = uuidv4();
     noteData.createdAt = new Date().toISOString();

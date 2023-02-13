@@ -1,17 +1,19 @@
-import { Form, useTransition } from '@remix-run/react';
+import { Form, useActionData, useTransition } from '@remix-run/react';
 import NewNoteStyles from './NewNote.css';
 
 function NewNote() {
+    const data = useActionData();
     const navigation = useTransition();
     const isSubmitting = navigation.state === 'submitting';
   return (
     <Form method="post" id="note-form">
+        {data?.message && <p className='validation-error'>{data.message}</p>}
       <p>
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Title *</label>
         <input type="text" id="title" name="title" required />
       </p>
       <p>
-        <label htmlFor="content">Content</label>
+        <label htmlFor="content">Content *</label>
         <textarea id="content" name="content" rows="5" required />
       </p>
       <div className="form-actions">

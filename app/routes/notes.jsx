@@ -3,7 +3,7 @@ import { useLoaderData } from "@remix-run/react";
 import NoteList, {links as noteListLinks} from "~/components/NoteList";
 import { getStoredNotes } from "~/data/notes";
 export default function NotesPage() {
-  const notes = useLoaderData()
+  const notes = useLoaderData();
   return (
     <main>
       <NoteList notes={notes}/>
