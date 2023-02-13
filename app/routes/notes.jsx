@@ -29,7 +29,7 @@ export function CatchBoundary() {
   const msg = coughtResponse.data.message || "Data not found";
 
   return <main>
-    <p className="info-message">{msg}<br /><Link className="link" to="/add">Add a note</Link></p>
+    <p className="info-message">{msg}<br /><Link to="/add">Add a note</Link></p>
   </main>
 }
 export function links() {
