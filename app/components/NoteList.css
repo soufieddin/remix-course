@@ -15,7 +15,7 @@
   }
   
   .note {
-    width: 80%;
+    width: 85%;
     background-color: var(--color-primary-700);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
@@ -25,12 +25,12 @@
   }
   @media (min-width :768px){
     .note {
-        width: 45%;
+        width: 65%;
       }
   }
   @media (min-width :1200px){
     .note {
-        width: 30%;
+        width: 55%;
       }
   }
   .note:hover {
