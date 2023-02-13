@@ -3,9 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     gap: 1rem;
     list-style: none;
     margin: 2rem auto;
+    padding: 0;
   }
   
   #note-list a {
@@ -13,7 +15,7 @@
   }
   
   .note {
-    width: 30%;
+    width: 80%;
     background-color: var(--color-primary-700);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
@@ -21,7 +23,16 @@
     animation: fade-blur-in 1s ease-out forwards;
     transition: all 0.3s ease-out;
   }
-  
+  @media (min-width :768px){
+    .note {
+        width: 45%;
+      }
+  }
+  @media (min-width :1200px){
+    .note {
+        width: 30%;
+      }
+  }
   .note:hover {
     background-color: var(--color-primary-600);
     transform: translateY(-0.25rem);
