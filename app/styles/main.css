@@ -90,6 +90,10 @@
     color: var(--color-primary-50);
     font-size: 1.5rem;
   }
+  .info-message a {
+    color: var(--color-primary-200);
+    font-size: 1.5rem;
+  }
   
   @keyframes fade-blur-in {
     from {
