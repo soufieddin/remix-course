@@ -27,4 +27,14 @@
     color: var(--color-primary-200);
     font-size: 1.15rem;
     white-space: pre-wrap;
+    margin-top: 3rem;
+  }
+
+  #note-details span {
+    color: var(--color-primary-100);
+    font-size: .7rem;
+  }
+
+  #note-details h1 {
+    margin-bottom: 0;
   }

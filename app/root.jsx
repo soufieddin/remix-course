@@ -51,7 +51,7 @@ export function CatchBoundary() {
         <main className="error">
           <h1>{coughtResponse.statusText}</h1>
           <p>{coughtResponse.data?.message || "Something went wrong!"}</p>
-          <p>Back to <Link to="/">safty</Link></p>
+          <p>Back to <Link to="/">Home</Link></p>
         </main>
         <ScrollRestoration />
         <Scripts />
